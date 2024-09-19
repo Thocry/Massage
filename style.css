@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #b3186b80;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+header img{
+    width: 100%;
+}
+
+.profiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.profile-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 250px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Sắp xếp các phần tử theo chiều dọc */
+    justify-content: space-between; /* Giãn đều các phần tử trong thẻ */
+}
+.profile-card:last-child{
+    margin-bottom: 50px;
+}
+
+.profile-card img {
+    width: 100%;
+    height: 300px; /* Đặt chiều cao cố định cho hình ảnh */
+    object-fit: cover; /* Cắt và căn chỉnh ảnh theo kích thước */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.profile-card .info {
+    padding: 15px;
+    flex-grow: 1; /* Đảm bảo phần thông tin chiếm không gian linh hoạt */
+}
+
+.profile-card .info h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.profile-card .info p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+footer {
+    background-color: #ff1493;
+    padding: 15px;
+    text-align: center;
+    margin-top: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+.contact-zalo {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.profile-card a {
+    text-decoration: none;
+    color: inherit;
+}
